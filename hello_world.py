@@ -1,3 +1,5 @@
-print("hello world")
-import time
-time.sleep(3600)
+def lambda_handler(event, context):
+    return {
+        "statusCode": 200,
+        "body": "Hello from Docker-based Lambda!"
+    }
